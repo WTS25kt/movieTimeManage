@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>視聴ページ</title>
+</head>
+<body>
+    <h1>視聴中</h1>
+    <p>サービス: {{ service }}</p>
+    <p>視聴を開始しました。別ウィンドウでサービスが開きます。</p>
+    <a href="{{ url_for('stop') }}">視聴を停止</a>
+</body>
+</html>
