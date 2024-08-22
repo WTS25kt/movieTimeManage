@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ダッシュボード</title>
+</head>
+<body>
+    <h1>ダッシュボード</h1>
+    <p>視聴時間: {{ watch_time }} 秒</p>
+    <ul>
+        <li><a href="{{ url_for('watch', service='youtube') }}">YouTube</a></li>
+        <li><a href="{{ url_for('watch', service='abema') }}">Abema</a></li>
+        <li><a href="{{ url_for('watch', service='primevideo') }}">Prime Video</a></li>
+    </ul>
+    <a href="{{ url_for('stop') }}">視聴を停止</a>
+    <a href="{{ url_for('logout') }}">ログアウト</a>
+</body>
+</html>
