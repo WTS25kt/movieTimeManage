@@ -1,0 +1,18 @@
+```html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ホーム</title>
+</head>
+<body>
+    <h1>ようこそ</h1>
+    <form action="{{ url_for('login') }}" method="post">
+        <label for="username">ユーザー名:</label>
+        <input type="text" id="username" name="username" required>
+        <button type="submit">ログイン</button>
+    </form>
+</body>
+</html>
+
+```
